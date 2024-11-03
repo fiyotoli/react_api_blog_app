@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <div className="p-3">
       {/* Header with border */}
-      <div className="text-center border-bottom border-top pb-2 mb-3">
+      <div className="text-center border-bottom border-top pb-2 my-3">
         <h4 className="mb-0">About <span className='text-success'>Me</span></h4>
       </div>
 

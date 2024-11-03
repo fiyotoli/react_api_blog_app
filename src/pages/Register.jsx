@@ -1,7 +1,7 @@
 // src/pages/Register/Register.jsx
 import React, { useState } from 'react';
 import { Form, Input, Button, Alert } from 'antd'; // Import Ant Design components
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const Register = () => {
@@ -57,8 +57,8 @@ const Register = () => {
                 </Form>
                 <div className="mt-3 text-center">
                     Already have an account?{' '}
-                    <a href="/login" className='' style={{ textDecoration: 'none' }}>Login here</a>
-                </div>
+                    <Link to ="/login">Login here</Link>
+                      </div>
             </div>
         </div>
     );

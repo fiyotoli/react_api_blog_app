@@ -8,6 +8,7 @@ import CreateBlog from './pages/CreateBlog';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import MyBlog from './pages/MyBlog';
+import NoPage from './pages/NoPage';
 
 const App = () => {
   // State to manage loading
@@ -53,6 +54,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/create" element={<CreateBlog />} />
           <Route path="/meal/:id" element={<MealDetail />} />
+          <Route path="*" element={<NoPage/>} />
         </Routes>
       )}
     </Router>
