@@ -24,7 +24,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router  basename="/react_api_blog_app">
       <Navbar />
 
       {/* Conditional rendering for loading spinner */}
