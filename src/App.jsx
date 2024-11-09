@@ -18,13 +18,13 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Spinner will be visible for 3 seconds
+    }, 1000); // Spinner will be visible for 3 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
   }, []);
 
   return (
-    <Router  basename="/react_api_blog_app">
+    <Router basename="/react_api_blog_app">
       <Navbar />
 
       {/* Conditional rendering for loading spinner */}
