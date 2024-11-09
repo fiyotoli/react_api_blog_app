@@ -13,7 +13,7 @@ const Hero = () => {
                     <p className="lead">
                         Discover a variety of recipes to tantalize your taste buds. From quick snacks to gourmet meals, we have it all.
                     </p>
-                    <Link to="/create" className="btn btn-success  fs-5 p-2">
+                    <Link to="/create" className="btn btn-primary  fs-5 p-2">
                          Create Blog
                         </Link>                </div>
 
