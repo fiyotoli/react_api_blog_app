@@ -4,17 +4,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d docs",
-  "dev": "vite",
-  "build": "vite build && if exist docs (rmdir /S /Q docs) && if exist dist (rename dist docs)", 
-  "lint": "eslint .",
-  "preview": "vite preview"
-},
-
-
-
+  "scripts": {
+   "predeploy": "vite build && mv dist docs",
+    "deploy": "gh-pages -d docs",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "antd": "^5.21.5",
     "bootstrap": "^5.3.3",
