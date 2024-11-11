@@ -8,10 +8,11 @@
   "predeploy": "npm run build",
   "deploy": "gh-pages -d docs",
   "dev": "vite",
-  "build": "vite build && rmdir /S /Q docs && rename dist docs", 
+  "build": "vite build && if exist docs (rmdir /S /Q docs) && if exist dist (rename dist docs)", 
   "lint": "eslint .",
   "preview": "vite preview"
 },
+
 
 
   "dependencies": {
