@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // Spinner will be visible for 3 seconds
+    }, 1100); // Spinner will be visible for 3 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
   }, []);
