@@ -5,14 +5,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-   
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d docs",
+  "dev": "vite",
+  "build": "vite build && mv dist docs", 
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
+
   "dependencies": {
     "antd": "^5.21.5",
     "bootstrap": "^5.3.3",
