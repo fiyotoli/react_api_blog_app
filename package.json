@@ -5,8 +5,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "predeploy": "vite build && move dist docs",
-  "deploy": "gh-pages -d docs",
+"predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
   "dev": "vite",
   "build": "vite build",
     "lint": "eslint .",
